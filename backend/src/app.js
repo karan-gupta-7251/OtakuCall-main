@@ -45,7 +45,7 @@ app.get("*", (req, res) => {
 const start = async () => {
   app.set("mongo_user");
   const connectionDb = await mongoose.connect(
-    "mongodb+srv://karangupta1612003:p3ysrphaJSiAVmmG@otakucall.ebw2psy.mongodb.net/zoomclone?retryWrites=true&w=majority"
+    "databse"
   );
 
   console.log(`MONGO Connected DB Host: ${connectionDb.connection.host}`);
